@@ -13,9 +13,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class StartPageController
 {
-    /**
-     * @Route("/")
-     */
     public function welcome() {
         return new Response('Willkommen bei Sultana!');
     }
