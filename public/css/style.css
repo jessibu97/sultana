@@ -1,0 +1,193 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #EAE9E6;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.header {
+    background-color: #BD375C;
+    width: 100%;
+    padding: 20px;
+    background:linear-gradient(0deg,rgba(247, 83, 96, .7),rgba(247, 83, 96, .7)),url("/images/rect.png");
+    text-align: center;
+    color: white;
+    background-size: cover;
+    -webkit-box-shadow: 0px 11px 26px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 26px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 26px 0px rgba(0,0,0,0.75);
+}
+
+.header h1 {
+    letter-spacing: 5px;
+}
+
+.header h2 {
+    /*font-family: 'Kristi', cursive;*/
+    letter-spacing: 2px;
+    hyphens: auto;
+    font-size: 16px;
+}
+
+.add-new {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(15, 151, 146, .8);
+    -webkit-box-shadow: -10px 10px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 14px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.add-new p {
+    font-size: 50px;
+    margin-top: -20px;
+    margin-left: 4px;
+}
+
+.about {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.register {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background:linear-gradient(0deg,rgba(15, 151, 146, .7),rgba(15, 151, 146, .7)),url("/images/rect.png");
+}
+
+#register_form input {
+    color: black;
+    width: 70%;
+    background-color: rgba(255, 255, 255, .1);
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    padding: 7px;
+    margin: 10px;
+    border: 2px solid #F75360;
+}
+
+button {
+    color: black;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 3px solid #F75360;
+    padding: 5px;
+    margin-top: 10px;
+    transition: .2s ease-in-out;
+    width: 60%;
+}
+
+button:hover {
+    background-color: #F75360;
+    color: white;
+}
+
+.register a {
+    color: white;
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content h1 {
+    border: 3px solid #0F9792;
+    margin: auto;
+    display: inline;
+    padding: 4px;
+}
+
+.data-detail {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.data-detail:first-of-type {
+    margin-top: 30px;
+}
+
+.time {
+    width: 30%;
+    float: left;
+}
+
+.text {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.symptom {
+    background-color: rgba(247, 83, 96, .4);
+}
+
+.action {
+    background-color: rgba(15, 151, 146, .4);
+}
+
+.datebutton {
+    border-color: rgba(15, 151, 146, 1);
+}
+
+.datebutton:hover {
+    background-color: rgba(15, 151, 146, .8);
+}
+
+input, textarea {
+    padding: 5px;
+    border: 3px solid #F75360;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+input[type='radio'] {
+    float: left;
+}
+
+.menu {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*media queries*/
+@media screen and (min-width: 600px) {
+    p {
+        padding: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    button, .button {
+        width: 200px;
+    }
+
+    #register_form input {
+        width: 300px;
+    }
+}

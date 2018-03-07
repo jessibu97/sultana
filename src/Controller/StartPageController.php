@@ -10,11 +10,17 @@ namespace App\Controller;
 
 
 use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class StartPageController
+class StartPageController extends AbstractController
 {
     public function welcome() {
-        return new Response('Willkommen bei Sultana!');
+        $title = "hello";
+        $title = "Willkommen bei Sultana";
+        return $this->render('pages/homepage.html.twig', [
+            'title' => $title,
+        ]);
     }
 
 }
